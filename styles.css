@@ -434,7 +434,7 @@ h1 span {
   font-size: 0.84rem;
 }
 
-.field input, .field select {
+.field input {
   border: 1.5px solid #ccd9e3;
   border-radius: 10px;
   background: #ffffff;
@@ -445,9 +445,100 @@ h1 span {
   transition: border-color 0.15s ease, outline 0.15s ease;
 }
 
-.field input:focus, .field select:focus {
+.field input:focus {
   outline: 3px solid rgba(0, 127, 122, 0.13);
   border-color: var(--teal);
+}
+
+/* ==========================================================================
+   Modern Dropdown / Select Styling
+   ========================================================================== */
+
+.select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.select-wrapper .select-icon {
+  position: absolute;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  fill: var(--teal);
+  pointer-events: none;
+  transition: transform 0.2s ease, fill 0.2s ease;
+  z-index: 2;
+}
+
+.select-wrapper .select-chevron {
+  position: absolute;
+  right: 15px;
+  width: 18px;
+  height: 18px;
+  fill: #687e91;
+  pointer-events: none;
+  transition: transform 0.22s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s ease;
+  z-index: 2;
+}
+
+.select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1.5px solid #cedbe4;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 14px 42px 14px 44px;
+  min-height: 54px;
+  width: 100%;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+  box-shadow: 0 2px 5px rgba(9, 40, 79, 0.03);
+}
+
+.select-wrapper select:hover {
+  border-color: #9cbacf;
+  background-color: #fbfdff;
+  box-shadow: 0 4px 12px rgba(9, 40, 79, 0.06);
+}
+
+.select-wrapper select:focus {
+  outline: none;
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(0, 127, 122, 0.16), 0 4px 14px rgba(0, 127, 122, 0.08);
+  background-color: #ffffff;
+}
+
+.select-wrapper:focus-within .select-chevron {
+  fill: var(--teal);
+  transform: rotate(180deg);
+}
+
+.select-wrapper:focus-within .select-icon {
+  transform: scale(1.08);
+}
+
+.select-wrapper select:invalid,
+.select-wrapper select:has(option[value=""]:checked) {
+  color: #7b8e9f;
+  font-weight: 500;
+}
+
+.select-wrapper select option {
+  color: var(--ink);
+  font-weight: 600;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.select-wrapper select option[value=""] {
+  color: #8b9baa;
+  font-weight: 400;
 }
 
 .form-grid {
