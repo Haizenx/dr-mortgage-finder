@@ -46,7 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.track-phone').forEach(el => {
       if (el.tagName === 'A') {
         el.setAttribute('href', `tel:${cfg.phoneRaw || cfg.phone.replace(/\D/g, '')}`);
-        el.textContent = cfg.phone;
+        const phoneText = el.querySelector('.phone-text');
+        if (phoneText) {
+          phoneText.textContent = cfg.phone;
+        } else {
+          el.textContent = cfg.phone;
+        }
       }
     });
   }

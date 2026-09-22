@@ -86,6 +86,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
 }
 
 .brand {
@@ -96,6 +97,9 @@ header {
   font-weight: 800;
   font-size: 1.2rem;
   letter-spacing: -0.01em;
+  white-space: nowrap;
+  text-decoration: none;
+  flex-shrink: 0;
 }
 
 .brand-mark {
@@ -106,6 +110,7 @@ header {
   display: grid;
   place-items: center;
   box-shadow: 0 6px 18px rgba(9, 40, 79, 0.18);
+  flex-shrink: 0;
 }
 
 .brand-mark svg {
@@ -118,6 +123,22 @@ header {
   color: var(--teal);
 }
 
+.brand-name {
+  white-space: nowrap;
+}
+
+.header-help {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.header-help small {
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 500;
+}
+
 .header-actions {
   display: flex;
   align-items: center;
@@ -125,10 +146,22 @@ header {
 }
 
 .header-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   font-weight: 700;
   font-size: 0.92rem;
   color: var(--teal);
-  transition: color 0.15s ease;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.header-phone .phone-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  color: currentColor;
 }
 
 .header-phone:hover {
@@ -141,6 +174,7 @@ header {
   color: var(--navy);
   font-size: 1.02rem;
   transition: color 0.15s ease;
+  white-space: nowrap;
 }
 
 .header-cta:hover {
@@ -1251,34 +1285,135 @@ dialog.modal::backdrop {
   }
 }
 
-@media (max-width: 600px) {
-  body {
-    padding-bottom: 72px;
+@media (max-width: 768px) {
+  header {
+    height: 64px;
   }
 
-  .wrap {
-    width: min(100% - 28px, 1160px);
-  }
-
-  .notice {
-    font-size: 0.74rem;
-  }
-
-  .brand {
-    font-size: 1rem;
-  }
-
-  .brand-mark {
-    width: 36px;
-    height: 36px;
+  .nav {
+    gap: 12px;
   }
 
   .header-help small {
     display: none;
   }
 
-  .header-help a {
+  .header-cta {
+    display: none; /* Hide top CTA in navbar on mobile/tablet — user has persistent sticky bottom CTA */
+  }
+
+  .brand {
+    font-size: 1.05rem;
+    gap: 9px;
+    flex-shrink: 0;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+    border-radius: 9px;
+    flex-shrink: 0;
+  }
+
+  .brand-mark svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .header-actions {
+    gap: 0;
+    flex-shrink: 0;
+  }
+
+  .header-phone {
     font-size: 0.86rem;
+    padding: 6px 12px;
+    background: #eef8f8;
+    border: 1px solid rgba(0, 127, 122, 0.22);
+    border-radius: 999px;
+    color: var(--teal);
+    white-space: nowrap;
+    text-decoration: none;
+  }
+
+  .header-phone:hover {
+    background: #e1f2f2;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-bottom: 72px;
+  }
+
+  header {
+    height: 60px;
+  }
+
+  .wrap {
+    width: min(100% - 24px, 1160px);
+  }
+
+  .notice {
+    font-size: 0.74rem;
+  }
+
+  .nav {
+    gap: 8px;
+  }
+
+  .brand {
+    font-size: 0.95rem;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+
+  .brand-mark svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .header-help small {
+    display: none;
+  }
+
+  .header-actions {
+    gap: 0;
+    flex-shrink: 0;
+  }
+
+  .header-cta {
+    display: none;
+  }
+
+  .header-phone {
+    font-size: 0.80rem;
+    padding: 5px 10px;
+    gap: 5px;
+    background: #eef8f8;
+    border: 1px solid rgba(0, 127, 122, 0.22);
+    border-radius: 999px;
+    color: var(--teal);
+    box-shadow: 0 1px 3px rgba(9, 40, 79, 0.05);
+    white-space: nowrap;
+  }
+
+  .header-phone:hover {
+    background: #e1f2f2;
+    text-decoration: none;
+  }
+
+  .header-phone .phone-icon {
+    width: 13px;
+    height: 13px;
   }
 
   .hero {
@@ -1363,5 +1498,66 @@ dialog.modal::backdrop {
   .mobile-cta .btn {
     width: 100%;
     min-height: 50px;
+  }
+}
+
+@media (max-width: 380px) {
+  .wrap {
+    width: min(100% - 18px, 1160px);
+  }
+
+  .brand {
+    font-size: 0.88rem;
+    gap: 6px;
+  }
+
+  .brand-mark {
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+  }
+
+  .brand-mark svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .header-phone {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    gap: 4px;
+  }
+
+  .header-phone .phone-icon {
+    width: 11px;
+    height: 11px;
+  }
+}
+
+@media (max-width: 340px) {
+  .wrap {
+    width: min(100% - 14px, 1160px);
+  }
+
+  .brand {
+    font-size: 0.82rem;
+    gap: 5px;
+  }
+
+  .brand-mark {
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+  }
+
+  .brand-mark svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .header-phone {
+    font-size: 0.70rem;
+    padding: 3px 6px;
+    gap: 3px;
   }
 }
