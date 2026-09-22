@@ -774,7 +774,7 @@ section.content {
   margin: 0 auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  object-position: 74% 25%;
+  object-position: center center;
   border-radius: 20px;
   box-shadow: var(--shadow);
   display: block;
