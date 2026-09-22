@@ -7,7 +7,7 @@
 window.CONFIG = {
   // 1. Where should submitted leads be emailed?
   // Enter the email address that will receive every borrower inquiry:
-  notificationEmail: "vincenthowel@gmail.com",
+  notificationEmail: "Shanebbacker@gmail.com",
 
   // 2. Company & Originator Licensing (PDF Section 1, 14, 16)
   companyName: "DrMortgageFinder, LLC",
@@ -18,7 +18,7 @@ window.CONFIG = {
   // 3. Real Contact Information
   phone: "(800) 555-0199",
   phoneRaw: "+18005550199",
-  email: "vincenthowel@gmail.com",
+  email: "Shanebbacker@gmail.com",
   address: "100 Medical Center Way, Suite 400, Chicago, IL 60611",
 
   // 4. Google Tag Manager / Google Ads IDs (PDF Section 1 & 4)
