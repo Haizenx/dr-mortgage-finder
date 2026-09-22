@@ -770,8 +770,11 @@ section.content {
 
 .visual-trust img {
   width: 100%;
+  max-width: 580px;
+  margin: 0 auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  object-position: 74% 25%;
   border-radius: 20px;
   box-shadow: var(--shadow);
   display: block;
@@ -1119,6 +1122,10 @@ dialog.modal::backdrop {
   .steps,
   .visual-trust {
     grid-template-columns: 1fr;
+  }
+
+  .visual-trust {
+    justify-items: center;
   }
 
   .trust-grid {
