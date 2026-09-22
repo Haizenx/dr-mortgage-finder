@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doctor Mortgage Loans | Up to 100% Financing</title>
+  <meta name="description" content="Explore physician mortgage options with up to 100% financing on qualified loans.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="notice">
+    <b>Physician mortgage options:</b> Up to 100% financing for qualified borrowers*
+  </div>
+
+  <!-- Header / Nav -->
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="DrMortgageFinder home">
+        <span class="brand-mark">
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M6 15 16 6l10 9v12H6z" fill="white"/>
+            <path d="M16 12v11M11 17.5h10" stroke="#00a6a6" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span>Dr<em>Mortgage</em>Finder</span>
+      </a>
+      <div class="header-help">
+        <small>Built for medical professionals</small>
+        <div class="header-actions">
+          <a href="tel:+18005550199" class="track-phone header-phone" aria-label="Call mortgage specialist">(800) 555-0199</a>
+          <a href="#options-form" class="header-cta">See my options</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="ad-match">Doctor mortgage options</div>
+          <h1>Buy a home with <span>up to 100% financing.</span></h1>
+          <p class="hero-lead">Mortgage options built for physicians, dentists, residents, and fellows—with guidelines that may account for student debt and future earning potential.</p>
+          <ul class="hero-points">
+            <li><i class="check">✓</i><span>Loan amounts up to $2 million*</span></li>
+            <li><i class="check">✓</i><span>No monthly PMI on eligible programs*</span></li>
+            <li><i class="check">✓</i><span>Options for residents and fellows*</span></li>
+            <li><i class="check">✓</i><span>Purchase and select refinance options</span></li>
+          </ul>
+          <div class="proof-note">
+            <div class="proof-seal">60s</div>
+            <div>
+              <b>See which options may fit in about one minute</b>
+              Quick, simple, and focused on medical professionals.
+            </div>
+          </div>
+        </div>
+
+        <!-- 3-Step Form Card (Matches Sitelink #options-form and anchor #check) -->
+        <div class="form-card" id="options-form">
+          <a id="check" style="position: absolute; top: -100px;"></a>
+          <div class="form-top">
+            <h2>Find your doctor-loan options</h2>
+            <p>Answer a few quick questions so we can match your situation.</p>
+          </div>
+
+          <div class="progress-wrap">
+            <div class="progress-meta">
+              <span id="step-label">Step 1 of 3</span>
+              <span id="percent">33% complete</span>
+            </div>
+            <div class="progress">
+              <span id="progress-bar"></span>
+            </div>
+          </div>
+
+          <form id="lead-form" novalidate>
+            <!-- Google Ads & Analytics Tracking inputs (Page 4 & 14) -->
+            <input type="hidden" name="gclid">
+            <input type="hidden" name="gbraid">
+            <input type="hidden" name="wbraid">
+            <input type="hidden" name="utm_source">
+            <input type="hidden" name="utm_medium">
+            <input type="hidden" name="utm_campaign">
+            <input type="hidden" name="utm_term">
+            <input type="hidden" name="utm_content">
+
+            <!-- Step 1: Profession & State -->
+            <div class="step active" data-step="1">
+              <div class="question">What best describes your profession?</div>
+              <div class="choices">
+                <div class="choice">
+                  <input type="radio" id="md" name="profession" value="Physician (MD/DO)">
+                  <label for="md">Physician (MD/DO)</label>
+                </div>
+                <div class="choice">
+                  <input type="radio" id="dentist" name="profession" value="Dentist (DDS/DMD)">
+                  <label for="dentist">Dentist (DDS/DMD)</label>
+                </div>
+                <div class="choice">
+                  <input type="radio" id="resident" name="profession" value="Resident or Fellow">
+                  <label for="resident">Resident or Fellow</label>
+                </div>
+                <div class="choice">
+                  <input type="radio" id="other" name="profession" value="Other medical professional">
+                  <label for="other">Other Medical Professional</label>
+                </div>
+              </div>
+
+              <div class="field" style="margin-top:15px">
+                <label for="state">Where do you plan to buy or refinance?</label>
+                <select id="state" name="state" required>
+                  <option value="">Select a state</option>
+                  <option>Arizona</option>
+                  <option>Colorado</option>
+                  <option>Connecticut</option>
+                  <option>Florida</option>
+                  <option>Indiana</option>
+                  <option>Maryland</option>
+                  <option>Michigan</option>
+                  <option>Minnesota</option>
+                  <option>Missouri</option>
+                  <option>New Jersey</option>
+                  <option>Ohio</option>
+                  <option>Pennsylvania</option>
+                  <option>South Carolina</option>
+                  <option>Tennessee</option>
+                  <option>Texas</option>
+                  <option>Virginia</option>
+                  <option>Washington</option>
+                  <option>West Virginia</option>
+                  <option>Another state</option>
+                </select>
+              </div>
+
+              <div class="error" id="error-1">Please select your profession and property state.</div>
+
+              <div class="actions">
+                <button class="btn next" type="button" data-next="2">
+                  Continue <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Goal & Timeline -->
+            <div class="step" data-step="2">
+              <div class="question">What are you planning?</div>
+              <div class="choices">
+                <div class="choice">
+                  <input type="radio" id="buy" name="goal" value="Buy a home">
+                  <label for="buy">Buy a home</label>
+                </div>
+                <div class="choice">
+                  <input type="radio" id="refi" name="goal" value="Refinance">
+                  <label for="refi">Refinance</label>
+                </div>
+                <div class="choice">
+                  <input type="radio" id="explore" name="goal" value="Explore options">
+                  <label for="explore">Explore options</label>
+                </div>
+                <div class="choice">
+                  <input type="radio" id="unsure" name="goal" value="Not sure yet">
+                  <label for="unsure">Not sure yet</label>
+                </div>
+              </div>
+
+              <div class="field" style="margin-top:15px">
+                <label for="timeline">When are you hoping to move forward?</label>
+                <select id="timeline" name="timeline" required>
+                  <option value="">Select timing</option>
+                  <option>Within 30 days</option>
+                  <option>1–3 months</option>
+                  <option>3–6 months</option>
+                  <option>More than 6 months</option>
+                  <option>Just researching</option>
+                </select>
+              </div>
+
+              <div class="error" id="error-2">Please select your goal and timing.</div>
+
+              <div class="actions">
+                <button class="btn back" type="button" data-back="1">Back</button>
+                <button class="btn next" type="button" data-next="3">
+                  Continue <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3: Contact Info & Consent -->
+            <div class="step" data-step="3">
+              <div class="question">Where can we reach you with your options?</div>
+              <div class="form-grid">
+                <div class="field full">
+                  <label for="name">Full name</label>
+                  <input id="name" name="name" autocomplete="name" enterkeyhint="next" required placeholder="First and last name">
+                </div>
+                <div class="field">
+                  <label for="phone">Phone number</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" enterkeyhint="next" required placeholder="(555) 555-5555">
+                </div>
+                <div class="field">
+                  <label for="email">Email <span class="optional">(optional)</span></label>
+                  <input id="email" name="email" type="email" autocomplete="email" enterkeyhint="done" spellcheck="false" placeholder="you@example.com">
+                </div>
+              </div>
+
+              <div class="error" id="error-3">Please enter your name and phone number.</div>
+              <div class="error" id="error-delivery">Unable to submit your request at this moment. Please check your connection or call us directly at (800) 555-0199.</div>
+
+              <div class="actions">
+                <button class="btn back" type="button" data-back="2">Back</button>
+                <button class="btn submit" type="submit" id="submit-btn">
+                  <span class="btn-text">Show my options</span> <span class="btn-arrow" aria-hidden="true">→</span>
+                  <span class="btn-spinner" aria-hidden="true"></span>
+                </button>
+              </div>
+
+              <div class="secure">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17 9h-1V7a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v9h14v-9a2 2 0 0 0-2-2Zm-7-2a2 2 0 1 1 4 0v2h-4V7Z"/>
+                </svg>
+                Your information is used to respond to your request
+              </div>
+
+              <p class="consent">
+                By selecting “Show my options,” you provide express written consent for DrMortgageFinder to call or text you about your mortgage request at the number provided, including through automated technology. Consent is not required to purchase goods or services. Message and data rates may apply. <a href="#privacy"><u>Privacy Notice</u></a>
+              </p>
+            </div>
+          </form>
+
+          <!-- Success State -->
+          <div class="success" id="success" role="status">
+            <div class="success-icon">✓</div>
+            <h3>Thank you, <span id="success-name">Doctor</span>.</h3>
+            <p>Your request has been received. A physician-mortgage specialist will contact you to review the options that may fit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Strip -->
+    <div class="trust-strip">
+      <div class="wrap trust-grid">
+        <div class="trust-item">
+          <span class="trust-icon">✓</span>
+          Built for medical professionals
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">⌁</span>
+          Personalized to your situation
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">○</span>
+          Takes about one minute
+        </div>
+      </div>
+    </div>
+
+    <!-- Value Proposition / Eligible Professionals Section (Matches Sitelink #eligible-professionals) -->
+    <section class="content" id="eligible-professionals">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Designed around a medical career</h2>
+          <p>A physician mortgage may address financial circumstances that traditional loan guidelines don’t always handle well.</p>
+        </div>
+        <div class="benefit-cards">
+          <article class="benefit">
+            <div class="num">01 · CASH</div>
+            <h3>Preserve your savings</h3>
+            <p>Qualified borrowers may be eligible for low- or no-down-payment financing, leaving more cash available after closing.</p>
+          </article>
+          <article class="benefit">
+            <div class="num">02 · DEBT</div>
+            <h3>Student loans considered differently</h3>
+            <p>Eligible programs may use specialized guidelines when reviewing education debt and physician income.</p>
+          </article>
+          <article class="benefit">
+            <div class="num">03 · TIMING</div>
+            <h3>Built for career transitions</h3>
+            <p>Options may be available for eligible residents, fellows, and doctors starting a new position.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Trust / Social Proof Section -->
+    <section class="content">
+      <div class="wrap visual-trust">
+        <img src="assets/doctor-home.png" alt="Physician holding home keys outside a modern home" width="640" height="480" loading="lazy">
+        <div class="visual-copy">
+          <div class="ad-match">Built for medical professionals</div>
+          <h2>A clearer path from training to homeownership.</h2>
+          <p>The review focuses on the details that matter for medical careers and makes your potential options easier to understand.</p>
+          <ul class="visual-list">
+            <li><i class="check">✓</i> Physician-program options explained clearly</li>
+            <li><i class="check">✓</i> Student debt and employment timing considered</li>
+            <li><i class="check">✓</i> Straightforward guidance based on your goals</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process / How It Works Section (Matches Sitelink #how-it-works) -->
+    <section class="content how" id="how-it-works">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>What happens next?</h2>
+          <p>A simple, personalized review of the options that may fit your goals.</p>
+        </div>
+        <div class="steps">
+          <div class="how-step">
+            <div class="circle">1</div>
+            <h3>We match your situation</h3>
+            <p>A specialist reviews the programs that may fit your profession, location, and timing.</p>
+          </div>
+          <div class="how-step">
+            <div class="circle">2</div>
+            <h3>You get a clear explanation</h3>
+            <p>We’ll walk through possible down payments, loan limits, and available next steps.</p>
+          </div>
+          <div class="how-step">
+            <div class="circle">3</div>
+            <h3>You choose your path</h3>
+            <p>Ask questions, compare your options, and decide what works best for you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section (Matches Sitelink #faq) -->
+    <section class="content" id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>How long does the initial review take?</summary>
+            <p>The form takes about one minute. A specialist will then review the information and contact you to discuss potentially relevant options.</p>
+          </details>
+          <details>
+            <summary>Who may qualify for a physician mortgage?</summary>
+            <p>Eligibility varies by program and lender. Physicians, dentists, residents, fellows, and certain other medical professionals may qualify.</p>
+          </details>
+          <details>
+            <summary>How does up to 100% financing work?</summary>
+            <p>Qualified borrowers may be able to finance the full purchase price through an eligible physician-loan program. Availability depends on program guidelines, location, loan size, and underwriting.</p>
+          </details>
+          <details>
+            <summary>Can student loan debt be considered differently?</summary>
+            <p>Potentially. Some physician-loan programs use specialized guidelines when calculating or evaluating student loan obligations.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy Notice Section -->
+    <section class="content privacy" id="privacy">
+      <div class="wrap privacy-copy">
+        <h2>Privacy Notice & Lead Consent</h2>
+        <p>Information submitted through this page is used to respond to your mortgage request, review potentially relevant program options, and provide the follow-up described with the form. We do not sell your personal information to unapproved third parties.</p>
+        <p><button class="btn-link" type="button" data-modal="privacy-modal">Read full Privacy Policy →</button></p>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Band -->
+    <section class="cta-band">
+      <div class="wrap cta-inner">
+        <div>
+          <h2>Explore your doctor-loan options.</h2>
+          <p>Start your personalized review in about one minute.</p>
+        </div>
+        <a class="btn" href="#options-form">See my options <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with NMLS & Legal Compliance (Pages 2, 14, 16) -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark">
+            <svg viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M6 15 16 6l10 9v12H6z" fill="white"/>
+              <path d="M16 12v11M11 17.5h10" stroke="#00a6a6" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>Dr<em>Mortgage</em>Finder</span>
+        </a>
+        <div class="legal">
+          <div class="equal-housing">
+            <svg viewBox="0 0 40 40" class="housing-icon" aria-label="Equal Housing Opportunity Logo">
+              <path d="M20 4L4 18h6v18h20V18h6L20 4zm-1 12h2v4h-2v-4zm-6 8h14v2H13v-2z" fill="currentColor"/>
+            </svg>
+            <span><strong>Equal Housing Opportunity.</strong> All loans are subject to credit approval, underwriting, and applicable program guidelines.</span>
+          </div>
+          <p>
+            *Program availability, eligible professions, maximum loan amounts up to $2,000,000, down-payment requirements (including up to 100% financing options), PMI treatment, property types, rates, and terms vary by lender, borrower qualifications, and active state licensing. This is not a commitment to lend.
+          </p>
+          <div class="nmls-disclosures">
+            <span><strong>Company NMLS:</strong> #1234567</span> · 
+            <span><strong>Originator NMLS:</strong> #7654321</span> · 
+            <span><strong>Headquarters:</strong> 100 Medical Center Way, Suite 400, Chicago, IL 60611</span> · 
+            <span><strong>Support:</strong> <a href="tel:+18005550199" class="track-phone">(800) 555-0199</a> | support@drmortgagefinder.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>© 2026 DrMortgageFinder. All rights reserved. NMLS Consumer Access ID: #1234567.</span>
+        <span>
+          <button class="btn-link" type="button" data-modal="privacy-modal">Privacy Policy</button> · 
+          <button class="btn-link" type="button" data-modal="terms-modal">Terms of Use</button> · 
+          <button class="btn-link" type="button" data-modal="licensing-modal">Licensing & State Disclosures</button>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Privacy Modal -->
+  <dialog id="privacy-modal" class="modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Privacy Policy</h3>
+        <button class="modal-close" type="button" data-close-modal>×</button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Effective Date: September 2026</strong></p>
+        <p>DrMortgageFinder is committed to protecting your personal information. When you submit your information via our mortgage matching service, you authorize us and our licensed lending partners to review your information to deliver loan options.</p>
+        <h4>Information Collected</h4>
+        <p>We collect profession, planned purchase timeline, location, full name, phone number, and email address as provided by you.</p>
+        <h4>TCPA Express Consent</h4>
+        <p>By providing your phone number and clicking submit, you expressly consent to receive communications (including calls, texts, and prerecorded messages using automated dialing technology) from DrMortgageFinder and its designated licensed mortgage loan originators. Consent is not a condition of purchase.</p>
+        <h4>Data Protection & CCPA/State Rights</h4>
+        <p>You may request to access, correct, or delete your personal data or opt out of communications at any time by emailing privacy@drmortgagefinder.com or calling (800) 555-0199.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" type="button" data-close-modal>Close</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Licensing Modal -->
+  <dialog id="licensing-modal" class="modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Licensing & Regulatory Disclosures</h3>
+        <button class="modal-close" type="button" data-close-modal>×</button>
+      </div>
+      <div class="modal-body">
+        <p>DrMortgageFinder connects medical professionals with licensed mortgage originators and financial institutions. All mortgage products are originated and underwritten by licensed lenders.</p>
+        <p>For more licensing details, visit <a href="https://www.nmlsconsumeraccess.org" target="_blank" rel="noopener noreferrer">NMLS Consumer Access</a>.</p>
+        <h4>Active Licensed States</h4>
+        <p>Arizona, Colorado, Connecticut, Florida, Indiana, Maryland, Michigan, Minnesota, Missouri, New Jersey, Ohio, Pennsylvania, South Carolina, Tennessee, Texas, Virginia, Washington, West Virginia.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" type="button" data-close-modal>Close</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Terms Modal -->
+  <dialog id="terms-modal" class="modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Terms of Use</h3>
+        <button class="modal-close" type="button" data-close-modal>×</button>
+      </div>
+      <div class="modal-body">
+        <p>By using this website, you agree that DrMortgageFinder provides marketing and loan scenario matching. We are not a depository bank. Rates, terms, and guidelines are subject to change without notice.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" type="button" data-close-modal>Close</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Sticky Mobile CTA -->
+  <div class="mobile-cta">
+    <a class="btn" href="#check">See my options — about one minute</a>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
